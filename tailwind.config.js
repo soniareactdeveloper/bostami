@@ -16,7 +16,7 @@ export default {
     },
     container: {
       center: true,
-      padding: '100px',
+      padding: '80px',
     },
     fontFamily: {
       'poppins': ["Poppins", "sans-serif"],

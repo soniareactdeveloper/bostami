@@ -3,6 +3,14 @@ import { MdPhoneIphone } from "react-icons/md";
 import { FaEnvelopeOpenText } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
+import { FaSwatchbook } from "react-icons/fa";
+import { LuLayoutGrid } from "react-icons/lu";
+import { FaCameraRetro } from "react-icons/fa6";
+import { TiPencil } from "react-icons/ti";
+import { FaListCheck } from "react-icons/fa6";
+import { FaCode } from "react-icons/fa";
+import Text from "../Components/Text";
+import Cart from "../Components/Cart";
 
 const About = () => {
   return (
@@ -11,7 +19,7 @@ const About = () => {
         <div className="bostami_page pt-[60px] px-20 bg-white rounded-[20px]">
           {/* heading component */}
           <Heading heading='About Me'/>
-          <div className="main flex flex-wrap mb-[40px]">
+          <div className="flex flex-wrap pb-[80px]">
             <div className="img">
              <img className="w-[263px] h-[400px] rounded-[30px] pb-[80px] px-[12px] " src="public/images/parsonimg_two.png" alt="profile" />
             </div>
@@ -60,8 +68,28 @@ const About = () => {
                    </div>
                 </div>
               </div>
-
+  
             </div>
+          </div>
+          {/* what i do? */}
+          <div className="main">
+            <div className="pb-[25px]">
+              <Text text="What I Do!"/>
+            </div>
+            {/* cart */}
+           <div className="flex flex-wrap gap-[30px]">
+            <Cart cartColor='bg-[#fff4f4]' cartHead='Ui/Ux Design' cartIcon={<FaSwatchbook className="text-[35px] text-[#d566ff]"/>}  carttext="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."/>
+
+            <Cart cartColor='bg-[#eef5fa]' cartHead='App Development' cartIcon={<LuLayoutGrid className="text-[35px] text-[#ff6080]"/>}  carttext="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."/>
+
+            <Cart cartColor='bg-[#FCF4FF]' cartHead='Photography'  cartIcon={<FaCameraRetro className="text-[35px] text-[#8774ff]"/>}  carttext="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."/>
+
+            <Cart cartColor='bg-[#FEFAF0]' cartHead='Graphic Design' cartIcon={<TiPencil className="text-[35px] text-[#dda10c]"/>}  carttext="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."/>
+
+            <Cart cartColor='bg-[#FFF0F8]' cartHead='Managment' cartIcon={<FaListCheck className="text-[35px] text-[#ff75d8]"/>}  carttext="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."/>
+
+            <Cart cartColor='bg-[#fff4f4]' cartHead='Web Development' cartIcon={<FaCode className="text-[35px] text-[#269fff]"/>}  carttext="Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam euismod tincidunt volutpat."/>
+           </div>
           </div>
         </div>
       </div>
