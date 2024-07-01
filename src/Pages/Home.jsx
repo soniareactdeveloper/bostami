@@ -4,6 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
+import SocialBtn from "../Components/SocialBtn";
 
 
 
@@ -18,14 +19,15 @@ const Home = () => {
           <div className="info_content flex flex-col items-center flex-wrap">
             <h4><Link className="text-[26px] font-medium text-black mb-2"  to='#'>Monalisa Ashley</Link></h4>
             <span className="text-[14px] text-[#7b7b7b] font-poppins font-medium px-5 py-1 mb-[15px]">Ui/Ux Designer</span>
-            <ul className="flex flex-wrap gap-1 mb-[30px]">
-              <li><Link className=" w-10 h-10 m-1 bg-[#f3f6f6] text-[18px] text-[#1773ea] flex items-center justify-center rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white" to='#'><FaFacebookF /></Link></li>
-              <li><Link className=" w-10 h-10 m-1 bg-[#f3f6f6] text-[18px] text-[#1c9cea] flex items-center justify-center rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white" to='#'><FaTwitter /></Link></li>
-              <li><Link className=" w-10 h-10 m-1 bg-[#f3f6f6] text-[18px] text-[#e12a72] flex items-center justify-center rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white" to='#'><FaInstagram /></Link></li>
-              <li><Link className=" w-10 h-10 m-1 bg-[#f3f6f6] text-[18px] text-[#144679] flex items-center justify-center rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white" to='#'><FaLinkedinIn /></Link></li>
-            </ul>
-            <div className="infoBtn">
-              <Link className="flex justify-center items-center gap-[5px] px-[30px] py-3 text-[18px] text-[#F3F6F6] font-poppins font-normal bg-gradient-to-r from-[#FA5252] to-[#DD2476] border-transparent border-[1px] border-solid rounded-[30px]" to='#'><FaDownload /> <span>Download Cv</span></Link>
+            {/* social button */}
+          <div className="flex flex-wrap gap-[17px] mb-[30px]">
+            <SocialBtn iconLink='https://www.facebook.com/reg/' icons={<FaFacebookF className="text-[#1773ea] hover:text-white"/>}/>
+            <SocialBtn iconLink="https://x.com/i/flow/login?mx=2" icons={<FaTwitter className="text-[#1c9cea] hover:text-[white]"/>}/>
+            <SocialBtn iconLink="https://www.instagram.com/" icons={<FaInstagram className="text-[#e12a72] hover:text-[white]"/>}/>
+            <SocialBtn iconLink="https://bd.linkedin.com/" icons={<FaLinkedinIn className="text-[#144679] hover:text-white"/>}/>
+          </div> 
+            <div className="infoBtn ">
+              <Link className="flex justify-center items-center gap-[5px] px-[30px] py-3 text-[18px] text-[#F3F6F6] font-poppins font-normal bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:-translate-y-1 hover:ease-in hover:duration-300  border-transparent border-[1px] border-solid rounded-[30px]" to='#'><FaDownload /> <span>Download Cv</span></Link>
             </div>
           </div>
        </div>
