@@ -1,8 +1,11 @@
-import React from 'react'
+
+import Heading from '../Components/Heading'
 
 const Works = () => {
   return (
-    <div>Works</div>
+    <>
+      <Heading/>
+    </>
   )
 }
 

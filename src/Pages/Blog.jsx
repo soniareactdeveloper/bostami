@@ -1,8 +1,11 @@
+import Heading from "../Components/Heading"
 
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <>
+      <Heading/>
+    </>
   )
 }
 
