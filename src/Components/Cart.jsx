@@ -1,6 +1,6 @@
 
 
-const Cart = ({cartIcon, cartHead, carttext,cartColor, cartTextTwo }) => {
+const Cart = ({cartIcon, cartHead, carttext,cartColor}) => {
   return (
     <div>
       <div className="pb-[30px]">
@@ -9,7 +9,6 @@ const Cart = ({cartIcon, cartHead, carttext,cartColor, cartTextTwo }) => {
            <div className="text">
             <h4 className="text-[22px] font-poppins font-medium text-black mb-[10px]">{cartHead}</h4>
             <p className="w-[190px] text-[16px] font-normal text-[#44566C] leading-[30px]">{carttext}</p>
-            <p className="text-[14px] font-normal text-[#44566C] font-poppins">{cartTextTwo}</p>
             </div>
          </div>
       </div>
